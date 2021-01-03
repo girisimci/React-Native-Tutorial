@@ -4,6 +4,9 @@ import Header from './components/header';
 import TodoItem from './components/todoItem';
 import AddTodo from './components/addTodo';
 
+
+
+
 export default function App(){
     const[todos, setTodos]=useState([
         {text:'bilardo',key:'1'},
@@ -47,6 +50,11 @@ export default function App(){
     
 
     return(
+
+      
+       
+   
+    
        <View style={styles.container}>
            <Header/>
         <View style={styles.content}>
@@ -73,11 +81,13 @@ const styles = StyleSheet.create({
         backgroundColor:'#fff',
 
     },content:{
-        padding:40
+        padding:40,
+       flex:1
     },list:{
-        marginTop:20
+        marginTop:20,
+      flex:1
     }
-    
+     
   
   
 });
